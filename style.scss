@@ -1,0 +1,141 @@
+// zero ========================================================
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+// ==============================================================
+// font =========================================================
+//&display=swap - добавить при подключении через плагин
+//=============================================================================================
+
+.stopwatch {
+	height: 100vh;
+	background-color: #502990;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 800px;
+	min-height: 600px;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #ffffff;
+	box-shadow: 0 0 35px 2px rgb(45, 29, 70);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.time {
+	min-width: 550px;
+	min-height: 150px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 10px;
+	margin-bottom: 100px;
+	font-size: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.interval {
+	width: 70px;
+	margin: 0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	user-select: none;
+	min-width: 150px;
+	min-height: 50px;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #000;
+	color: #fff;
+	margin: 0 25px;
+}
