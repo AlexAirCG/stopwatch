@@ -93,7 +93,7 @@ h6 {
 }
 
 .container {
-	width: 800px;
+	min-width: 1000px;
 	min-height: 600px;
 	border-radius: 5px;
 	overflow: hidden;
@@ -103,29 +103,48 @@ h6 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 600px) {
+		min-width: 500px;
+		min-height: 300px;
+	}
+	@media (max-width: 420px) {
+		min-width: 350px;
+		min-height: 200px;
+	}
 }
 
 .time {
 	display: flex;
 	gap: 10px;
 	margin-bottom: 50px;
+	@media (max-width: 420px) {
+		margin-bottom: 30px;
+	}
 }
 
 .item {
 	background-color: #000;
 	color: #fff;
 	border-radius: 10px;
-	font-size: 40px;
+	font-size: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	padding: 20px;
+	@media (max-width: 600px) {
+		font-size: 25px;
+		padding: 10px;
+	}
+	@media (max-width: 420px) {
+		font-size: 20px;
+		padding: 5px;
+	}
 }
 
 .interval {
-	width: 70px;
 	display: flex;
 	flex-direction: row;
+	margin-right: 10px;
 	justify-content: center;
 	align-items: center;
 }
@@ -139,5 +158,15 @@ h6 {
 	font-weight: bold;
 	background-color: #000;
 	color: #fff;
-	margin: 0 25px;
+	margin: 0 20px;
+	@media (max-width: 600px) {
+		min-width: 100px;
+		min-height: 30px;
+		margin: 0 10px;
+	}
+	@media (max-width: 420px) {
+		min-width: 70px;
+		min-height: 20px;
+		margin: 0 5px;
+	}
 }
