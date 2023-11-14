@@ -93,8 +93,7 @@ h6 {
 }
 
 .container {
-	min-width: 1000px;
-	min-height: 600px;
+	padding: 20px;
 	border-radius: 5px;
 	overflow: hidden;
 	background-color: #ffffff;
@@ -103,14 +102,6 @@ h6 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	@media (max-width: 600px) {
-		min-width: 500px;
-		min-height: 300px;
-	}
-	@media (max-width: 420px) {
-		min-width: 350px;
-		min-height: 200px;
-	}
 }
 
 .time {
